@@ -13,7 +13,7 @@ terraform {
 module "backend_vpc" {
   source     = "./modules/backend"
   cidr_block = "10.0.0.0/16"
-  vpc_name   = "-backend"
+  vpc_name   = "rossenzii-backend"
 }
 ## db
 module "dynamodb_lock_table" {
